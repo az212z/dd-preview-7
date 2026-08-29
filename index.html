@@ -88,11 +88,11 @@ nav .navcta:hover{background:#fff;color:#000;border-color:#fff}
 #hero .rate b{color:#fff;font-weight:700}
 #hero{position:relative}
 #hero .cover,#hero .hero-inner{position:relative;z-index:2}
-#hero .wm{display:none}
+#hero .wm{display:block;height:auto;width:min(170px,44vw);margin:1.5rem auto .3rem;filter:drop-shadow(0 5px 20px rgba(0,0,0,.85))}
 #hero .hfill{display:none}
 @media (min-width:820px){
-  #hero .hfill{display:block;position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;filter:blur(42px) brightness(.32) saturate(1.08);transform:scale(1.2)}
-  #hero::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(130% 95% at 50% 42%,transparent 42%,rgba(0,0,0,.62));pointer-events:none}
+  #hero .hfill{display:block;position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:blur(9px) brightness(.5) saturate(1.05);transform:scale(1.06)}
+  #hero::after{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(120% 95% at 50% 42%,rgba(0,0,0,.15) 30%,rgba(0,0,0,.72) 100%),linear-gradient(90deg,rgba(0,0,0,.35),transparent 22%,transparent 78%,rgba(0,0,0,.35));pointer-events:none}
 }
 
 /* STORY — full image + zoom */
@@ -231,7 +231,7 @@ footer .cp .en{color:var(--dim)}
 
 <!-- HERO (design 4: cinematic) -->
 <header id="hero">
-  <img class="hfill" src="assets/hero6.jpg" alt="" aria-hidden="true">
+  <img class="hfill" src="assets/hero7-bg.jpg" alt="" aria-hidden="true">
   <figure class="cover"><img src="assets/hero-cover.jpg" alt="تفاصيل الديكور — مركز الديكور الداخلي والفنون بتبوك" fetchpriority="high"></figure>
   <div class="hero-inner reveal in">
     <img class="wm" src="assets/logo-official.png" alt="تفاصيل الديكور Details decoration">
